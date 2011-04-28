@@ -1,0 +1,5 @@
+h1. YAIB
+
+As the name suggests YAIB is another IRC bot framework.
+
+Early BETA is a good description for its current state so a lot is subject to change so the readme will be lacking for now
