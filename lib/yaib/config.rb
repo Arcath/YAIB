@@ -10,6 +10,7 @@ module YAIB
             @host = "arcath.net"
             @log = Logger.new("log/yaib.log", "weekly")
             @listeners = []
+            @commands = []
             @prefix = "!"
         end
     end
