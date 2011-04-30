@@ -14,7 +14,7 @@ module YAIB
         end
         
         def parse(rawmsg)
-            [rawmsg.scan(/.* PRIVMSG .*? \:(.*)/).join, rawmsg.scan(/.* PRIVMSG (.*?) \:.*/).join, rawmsg.split(/\!/)[0].sub(/^\:/,'')]
+            [rawmsg.scan(/.* PRIVMSG .*? \:(.*)/).join.chomp, rawmsg.scan(/.* PRIVMSG (.*?) \:.*/).join, rawmsg.split(/\!/)[0].sub(/^\:/,'')]
         end
         
         def privmsg(s)
